@@ -25,3 +25,10 @@ btnFonte.addEventListener('click', () => {
     cartao.classList.toggle('fonte-alternativa');
 });
 
+const imagemSelect = document.getElementById('imagem-select');
+const cartaoImg = document.getElementById('cartao-img');
+
+imagemSelect.addEventListener('change', () => {
+    cartaoImg.setAttribute('src', imagemSelect.value);
+});
+
