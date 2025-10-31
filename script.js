@@ -32,3 +32,13 @@ imagemSelect.addEventListener('change', () => {
     cartaoImg.setAttribute('src', imagemSelect.value);
 });
 
+const habilidadeInput = document.getElementById('habilidade-input');
+const btnAdicionar = document.getElementById('btn-adicionar');
+const listaHabilidades = document.getElementById('lista-habilidades');
+
+btnAdicionar.addEventListener('click', () => {
+    const novoLi = document.createElement('li');
+    novoLi.textContent = habilidadeInput.value;
+    listaHabilidades.appendChild(novoLi);
+    habilidadeInput.value = '';
+});
